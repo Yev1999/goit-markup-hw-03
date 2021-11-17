@@ -12,7 +12,11 @@
       rel="stylesheet"
     />
     <link
-      rel="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -22,7 +26,7 @@
         <nav class="header-navigation">
           <a href="" class="heder-logo link"
             >Web<span class="studio-nav">Studio</span></a>
-          <ul class="list heder-list">
+          <ul class="heder-list">
             <li class="header-item">
               <a class="header-link link" href="">Студия</a>
             </li>
@@ -34,20 +38,18 @@
             </li>
           </ul>
         </nav>
-        <div class="header-connect">
-          <ul class="list heder-list">
-            <li>
-              <a class="header-tel link" href="mailto:info@devstudio.com"
+          <ul class="heder-list header-connect">
+            <li class="header-item">
+              <a class="link header-tel" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <a class="header-tel link" href="tel:+380961111111"
+            <li class="header-item">
+              <a class="link header-tel" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </li>
           </ul>
-        </div>
       </div>
     </header>
     <main>
@@ -57,10 +59,10 @@
         <button class="section-btn" type="button">Заказать услугу</button>
       </div>
       </section>
-      <div class="container">
-      <section class="section-work">
+      <section class="section">
+        <div class="container">
         <h2 hidden>заголовок</h2>
-        <ul class="list work-list">
+        <ul class="work-list">
           <li class="work-li">
             <h3 class="section-work-title">Внимание к деталям</h3>
             <p class="section-work-text">
@@ -92,10 +94,10 @@
         </ul>
       </div>
       </section>
-      <section class="section-ourwork">
+      <section class="section section-ourwork">
         <div class="container">
         <h2 class="section-ourwork-title">Чем мы занимаемся</h2>
-        <ul class="list about-list">
+        <ul class="about-list">
           <li class="about-item">
             <img class="about-img"
               src="./images/img1.jpg"
@@ -123,10 +125,10 @@
         </ul>
         </div>
       </section>
-      <section class="section-team">
+      <section class="section section-team">
         <div class="container">
         <h2 class="section-team-title">Наша команда</h2>
-        <ul class="list list-team">
+        <ul class="list-team">
           <li class="team-li">
             <img
               src="./images/img1-min.jpg"
@@ -134,8 +136,10 @@
               width="270"
               height="260"about-item
             />
+            <div class="team-div">
             <h3 class="section-team-name">Игорь Демьяненко</h3>
             <p class="section-team-text" lang="en">Product Designer</p>
+          </div>
           </li>
           <li class="team-li">
             <img
@@ -144,8 +148,10 @@
               width="270"
               height="260"
             />
+            <div class="team-div">
             <h3 class="section-team-name">Ольга Репина</h3>
             <p class="section-team-text" lang="en">Frontend Developer</p>
+          </div>
           </li>
           <li class="team-li">
             <img
@@ -154,8 +160,10 @@
               width="270"
               height="260"
             />
+            <div class="team-div">
             <h3 class="section-team-name">Николай Тарасов</h3>
             <p class="section-team-text" lang="en">Marketing</p>
+          </div>
           </li>
           <li class="team-li">
             <img
@@ -164,20 +172,23 @@
               width="270"
               height="260"
             />
+            <div class="team-div">
             <h3 class="section-team-name">Михаил Ермаков</h3>
             <p class="section-team-text" lang="en">UI Designer</p>
+          </div>
           </li>
         </ul>
       </div>
       </section>
     </div>
+  </main>
       <footer class="footer">
         <div class="container">
-        <a href="./index.html" class="heder-logo link"
+        <a href="./index.html" class="heder-logo-footer link"
           >Web<span class="studio-footer">Studio</span></a
         >
         <address>
-          <ul class="list">
+          <ul class="">
             <li>
               <a
                 class="footer-map link"
@@ -203,6 +214,5 @@
         </address>
       </div>
       </footer>
-    </main>
   </body>
 </html>
