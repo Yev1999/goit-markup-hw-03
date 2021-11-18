@@ -358,6 +358,10 @@ img {
 
 /*---------------section-portfolio---------------*/
 
+.h1-portfolio {
+    display: none;
+}
+
 .portfolio-btn {
     display: flex;
     justify-content: center;
