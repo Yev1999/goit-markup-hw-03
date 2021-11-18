@@ -91,9 +91,19 @@ body {
 
 /*---------------HEADER---------------*/
 
+.header-tel::before {
+    width: 12px;
+    height: 16px;
+    background-image: url(//images/mail.svg);
+    background-size: contain;
+}
 .header-navigation {
     display: flex;
     align-items: center;
+}
+
+.header {
+    border-bottom: 1px solid #ECECEC;
 }
 
 .heder-logo {
@@ -146,8 +156,13 @@ body {
 .section-services {
     text-align: center;
     background: var(--section-servicec-fon);
+    background-image: url("/images/fon-services.jpg");
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 200px 0;
 }
+
 .section-title {
     width: 696px;
     margin-top: 0;
@@ -228,7 +243,7 @@ body {
     margin-left: 0px;
 }
 
-.about-item {
+.about-item:nth-child(n+2) {
     margin-left: 30px;
 }
 
@@ -260,7 +275,7 @@ img {
     background: var(--section-team-fon);
 }
 
-.team-li {
+.team-li:nth-child(n+2) {
     margin-left: 30px;
 }
 
@@ -305,6 +320,8 @@ img {
     line-height: 1.20;
     letter-spacing: 0.03em;
     color: var(--colored-text);
+    margin-bottom: 20px;
+    display: block;
 }
 
 .footer {
@@ -417,3 +434,4 @@ img {
     justify-content: center;
     margin-top: 0;
     margin-bottom: 50px;
+}
