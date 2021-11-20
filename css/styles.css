@@ -91,12 +91,7 @@ body {
 
 /*---------------HEADER---------------*/
 
-.header-tel::before {
-    width: 12px;
-    height: 16px;
-    background-image: url(//images/mail.svg);
-    background-size: contain;
-}
+
 .header-navigation {
     display: flex;
     align-items: center;
@@ -114,8 +109,8 @@ body {
     letter-spacing: 0.03em;
     color: var(--colored-text);
     margin-right: 93px;
-    padding-top: 29px;
-    padding-bottom: 29px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-item:not(:last-child) {
@@ -151,17 +146,23 @@ body {
 
 /*---------------section-services---------------*/
 
-
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
 
 .section-services {
     text-align: center;
     background: var(--section-servicec-fon);
-    background-image: url("/images/fon-services.jpg");
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     padding: 200px 0;
 }
+
 
 .section-title {
     width: 696px;
@@ -209,8 +210,8 @@ body {
 .work-li {
     width: 270px;
 }
-.work-li {
-    margin-left: 15px;
+.work-li:not(:first-child) {
+    margin-left: 30px;
 }
 
 .section-work-title {
@@ -220,7 +221,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--second-title-color);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .section-work-text {
     font-size: 14px;
@@ -240,10 +241,9 @@ body {
 }
 .about-list {
     display: flex;
-    margin-left: 0px;
 }
 
-.about-item:nth-child(n+2) {
+.about-item:not(:first-child) {
     margin-left: 30px;
 }
 
@@ -275,7 +275,7 @@ img {
     background: var(--section-team-fon);
 }
 
-.team-li:nth-child(n+2) {
+.team-li:not(:first-child) {
     margin-left: 30px;
 }
 
@@ -327,10 +327,12 @@ img {
 .footer {
     padding: 60px 0px;
     background: var(--footer-fon);
-    margin-bottom: 20px;
-    display: block;
 }
 
+.footer-li {
+    margin-bottom: 9px;
+    display: block;
+}
 
 .footer-map {
     font-size: 14px;
@@ -358,9 +360,6 @@ img {
 
 /*---------------section-portfolio---------------*/
 
-.h1-portfolio {
-    display: none;
-}
 
 .portfolio-btn {
     display: flex;
@@ -414,18 +413,25 @@ img {
     margin-right: 30px;
     box-sizing: border-box;
     margin-bottom: 30px;
+
 }
 
 .work-item:nth-child(3n) {
     margin-right: 0;
 }
+
+.work-item:nth-last-child(-n + 3){
+    margin-bottom: 0;
+}
+
+
 .portfolio-div {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
 }
 
 .section-title-portfolio-name {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
